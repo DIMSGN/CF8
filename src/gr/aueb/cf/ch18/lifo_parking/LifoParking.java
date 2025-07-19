@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch19.lifo_parking;
+package gr.aueb.cf.ch18.lifo_parking;
 
 import java.time.LocalDateTime;
 import java.util.Deque;

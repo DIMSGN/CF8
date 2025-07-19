@@ -1,8 +1,5 @@
-package gr.aueb.cf.ch19.lists;
+package gr.aueb.cf.ch18.lists;
 
-import gr.aueb.cf.ch4.CharInput1;
-
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

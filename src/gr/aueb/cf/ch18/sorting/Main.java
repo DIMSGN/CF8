@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch19.sorting;
+package gr.aueb.cf.ch18.sorting;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -16,10 +16,18 @@ public class Main {
 //        products.sort(Comparator.naturalOrder()); //interface comparable ascending
 //        products.sort(Comparator.reverseOrder()); //interface comparable descending
 //
-        products.sort(Comparator.comparing(Product::getPrice)); // παιρνει lambdas kai κανουμε ευκολα sorting
+//        products.sort(Comparator.comparing(Product::getPrice)); // παιρνει lambdas kai κανουμε ευκολα sorting
+//
+//        products.sort(Comparator.comparing(Product::getDescription)
+//                                .thenComparing(Product::getQuantity));
+//
+
 
         products.sort(Comparator.comparing(Product::getDescription)
-                                .thenComparing(Product::getQuantity));
+                                .thenComparing(Product::getQuantity)
+                                .thenComparing(Product::getPrice)
+                                .reversed()
+        );
 
         products.forEach(System.out::println);
     }
